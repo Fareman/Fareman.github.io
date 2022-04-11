@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Zen+Antique&display=swap");
+@import url(../node_modules/bootstrap/scss/bootstrap.scss);
+
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+}
+
+.signUp {
+  h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 71px;
+    color: #ffffff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #ffffff;
+  }
+  button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
