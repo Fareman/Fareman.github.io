@@ -11,143 +11,126 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>WebStripe</title>
+    <title>Equiteez</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-white justify-content-center">
-        <div class="container-fluid">
-          <div class="row mx-auto">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon" />
-            </button>
-            <div class="col-lg-2">
-              <a class="navbar-brand" href="/"> <img src="/images/logo.svg" alt="Logo" /></a>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler navbar-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img class="img-fluid" src="/images/menu-btn.svg" alt="Open menu" />
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/images/logo.svg" alt="Logo" />
+          </a>
+          <div class="collapse navbar-collapse justify-content-md-between" id="navbarText">
+            <div class="nav justify-content-center">
+              <a class="nav-link" href="#chapter1">What Are Digital Securities?</a>
+              <a class="nav-link" href="#chapter2">Products</a>
+              <a class="nav-link" href="#chapter3">Digitize Your Business</a>
+              <a class="nav-link" href="#chapter4">Blog</a>
+              <a class="nav-link" href="#chapter5">Contact Us</a>
             </div>
-            <div class="col-lg-auto">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li>
-                    <a class="nav-link" href="#chapter1">What Are Digital Securities?</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#chapter2">Products</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#chapter3">Digitize Your Business</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#chapter4">Blog</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#chapter5">Contact Us</a>
-                  </li>
-                  <li class="media">
-                    <img src="/images/twitter.svg" alt="Follow us on twitter" />
-                    <img src="/images/facebook.svg" alt="Follow us on Facebook" />
-                    <img src="/images/linkedin.svg" alt="Follow us on LinkedIn" />
-                    <img src="/images/medium.svg" alt="Follow us on Medium" />
-                  </li>
-                </ul>
-              </div>
+
+            <div class="media d-flex justify-content-between col-2 pt-5 pt-lg-0">
+              <img class="px-1" src="/images/twitter.svg" alt="Follow us on twitter" />
+              <img class="px-1" src="/images/facebook.svg" alt="Follow us on Facebook" />
+              <img class="px-1" src="/images/linkedin.svg" alt="Follow us on LinkedIn" />
+              <img class="px-1" src="/images/medium-light.svg" alt="Follow us on Medium" />
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main>
-      <div class="signUp container-fluid">
+
+    <section class="preview py-3 py-lg-5">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1>Private Equity Made Easy</h1>
-            <p>
-              Equiteez is on a mission to make private equity easily accesible to all in vestors
-            </p>
-            <button type="button" class="btn btn-dark">Singnup For Free</button>
+          <div class="col-12 col-lg-7">
+            <div class="preview-text text-center text-lg-start">
+              <h1>Private Equity Made Easy</h1>
+              <p class="d-none d-lg-block">
+                Equiteez is on a mission to make private equity easily accesible to all in vestors
+              </p>
+              <button class="btn d-none d-lg-block">Signup For Free</button>
+            </div>
           </div>
-          <div class="col-md-6">
-            <img src="/images/smartphone.png" alt="Приложение" class="img-fluid" />
+          <div class="col-12 col-lg-5">
+            <div class="preview-img text-center text-lg-end">
+              <img class="img-fluid" src="/images/smartphone.png" alt="smartphone" />
+              <p class="d-block d-lg-none">
+                Equiteez is on a misson to make private equity easily accesible to all in vestors
+              </p>
+
+              <button class="btn d-block d-lg-none m-auto">Sign Up For Free</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid" style="background-color: white">
+    </section>
+
+    <section class="securityBlock py-3 py-lg-5">
+      <div class="container">
         <div class="row">
-          <h2
-            id="chapter1"
-            style="
-              font-weight: 600;
-              font-size: 45px;
-              line-height: 61px;
-              text-align: center;
-              color: #000000;
-            "
-          >
-            What Are Digital Securities?
-          </h2>
-          <p
-            style="
-              font-weight: 400;
-              font-size: 25px;
-              line-height: 34px;
-              text-align: center;
-              color: #000000;
-            "
-          >
+          <h2 class="title-header" id="chapter1">What Are Digital Securities?</h2>
+          <p class="title-subheader">
             Digital securities represent traditional assets like equity or bonds. They carry all of
             the same legal rights of their paper issued counter-parts.
           </p>
         </div>
-        <div class="card-group">
-          <div class="card">
-            <img
-              src="/images/investAnyAmount.svg"
-              class="card-img-top mx-auto"
-              alt="Invest"
-              style="width: 250px"
-            />
+
+        <div class="row">
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
+            <img class="mx-auto" src="/images/investAnyAmount.svg" alt="Invest" />
             <div class="card-body">
-              <h5 class="card-title">Invest Any Amount</h5>
-              <p class="card-text">Start with as little as $1, buy parts of a whole share</p>
+              <h5 class="text-center">Invest Any Amount</h5>
+              <p class="text-center">Start with as little as $1, buy parts of a whole share</p>
             </div>
           </div>
-          <div class="card">
-            <img src="/images/accessPrivateEquity.svg" class="card-img-top" alt="Private Equity" />
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
+            <img src="/images/accessPrivateEquity.svg" alt="Private Equity" />
             <div class="card-body">
-              <h5 class="card-title">Access Private Equity</h5>
-              <p class="card-text">Get access to investments typically reserved for institutions</p>
+              <h5 class="text-center">Access Private Equity</h5>
+              <p class="text-center">
+                Get access to investments typically reserved for institutions
+              </p>
             </div>
           </div>
-          <div class="card">
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
             <img src="/images/trade.svg" class="card-img-top" alt="Trade" />
             <div class="card-body">
-              <h5 class="card-title">Trade 24/7</h5>
-              <p class="card-text">Digital assets don’t sleep, so why should you stop trading?</p>
+              <h5 class="text-center">Trade 24/7</h5>
+              <p class="text-center">Digital assets don’t sleep, so why should you stop trading?</p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3">
+
+        <div class="row d-flex justify-content-center py-4">
+          <div class="col-12 col-lg-5 pb-4 py-lg-0">
             <input
               type="email"
-              class="form-control"
+              class="email-input form-control w-100"
               placeholder="E-mail*"
               aria-describedby="emailHelp"
             />
           </div>
-          <div class="col-md-2">
-            <button type="submit" class="btn btn-success">Get Early Access</button>
+          <div class="col-12 col-lg-3">
+            <button type="submit" class="btn w-100">Get Early Access</button>
           </div>
         </div>
       </div>
-      <div class="quoteBlock container-fluid">
+    </section>
+
+    <section class="quoteBlock">
+      <div class="container">
         <figure class="text-center">
           <blockquote class="blockquote">
             <p>Digital Assets are the future of private equity</p>
@@ -155,273 +138,255 @@
           <figcaption class="blockquote-footer">Deloitte</figcaption>
         </figure>
       </div>
-      <div class="productBlock container-fluid">
+    </section>
+
+    <section class="productBlock py-3 py-lg-5">
+      <div class="container">
         <div class="row"><h2 id="chapter2">Products</h2></div>
         <div class="row align-items-center">
-          <div class="col">
+          <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Launchpad</h5>
-                <p class="card-text">Help launch startups<br />& fund private bussinesses</p>
-              </div>
+              <h5 class="card-title">Launchpad</h5>
+              <h6 class="card-text mb-4 mb-lg-5">
+                Help launch startups<br />& fund private bussinesses
+              </h6>
             </div>
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title" style="color: #2fcc71">Marketplace</h5>
-                <p class="card-text" style="margin: 0">
-                  Browse through stocks on sale<br />from private investors
-                </p>
-              </div>
+              <h5 class="card-title" style="color: #2fcc71">Marketplace</h5>
+              <h6 class="card-text" style="margin: 0">
+                Browse through stocks on sale from private investors
+              </h6>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
             <img src="/images/productSvg.svg" alt="Product" />
           </div>
         </div>
       </div>
-      <div class="container-fluid" style="background-color: #c4c4c4">
+    </section>
+
+    <section class="benefits py-5">
+      <div class="container">
         <h2 id="chapter3">Digitize Your Business</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card border-success" style="width: 350px; height: 314px">
+        <div class="row pb-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card py-5 mt-3 mt-lg-4 mb-1 mb-lg-3">
               <img
                 src="/images/raiseCapital.svg"
-                class="card-img-top mx-auto"
+                class="card-img-top mx-auto mt-3 mt-lg-4"
                 alt="Capital"
                 style="width: 62px; height: 62px"
               />
-              <div class="card-body">
-                <h2 class="card-title text-center">Raise Capital</h2>
-                <p class="card-text text-center">
-                  Expand your investor base globally through the Equitees launchpad
-                </p>
-              </div>
+              <h3 class="card-title text-center my-1 my-lg-3">Raise Capital</h3>
+              <p class="card-text text-center mx-3 mb-2 mb-lg-5">
+                Expand your investor base globally through the Equitees launchpad
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="width: 350px; height: 314px">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card py-5 mt-3 mt-lg-4 mb-1 mb-lg-3">
               <img
                 src="/images/automatedCompliance.svg"
-                class="card-img-top mx-auto"
+                class="card-img-top mx-auto mt-3 mt-lg-4"
                 alt="Compliance"
                 style="width: 62px; height: 62px"
               />
-              <div class="card-body">
-                <h2 class="card-title text-center">Automated Compliance</h2>
-                <p class="card-text text-center">
-                  Regulation aware shares means less time on the phone with your lawyers
-                </p>
-              </div>
+              <h3 class="card-title text-center my-1 my-lg-3">Automated Compliance</h3>
+              <p class="card-text text-center mx-3 mb-2 mb-lg-5">
+                Regulation aware shares means less time on the phone with your lawyers
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="width: 350px; height: 314px">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card py-5 mt-3 mt-lg-4 mb-1 mb-lg-3">
               <img
                 src="/images/digitalTransferAgent.svg"
-                class="card-img-top mx-auto"
+                class="card-img-top mx-auto mt-3 mt-lg-4"
                 alt="Digital Transfer"
                 style="width: 62px; height: 62px"
               />
-              <div class="card-body">
-                <h2 class="card-title text-center">Digital Transfer Agent</h2>
-                <p class="card-text text-center">
-                  Everything from shareholder , managment, voting, even dividend distribution
-                </p>
-              </div>
+              <h3 class="card-title text-center my-1 my-lg-3">Digital Transfer Agent</h3>
+              <p class="card-text text-center mx-3 mb-2 mb-lg-5">
+                Everything from shareholder , managment, voting, even dividend distribution
+              </p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card" style="width: 350px; height: 314px">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card py-5 mt-3 mt-lg-4 mb-1 mb-lg-3">
               <img
                 src="/images/lowerFees.svg"
-                class="card-img-top mx-auto"
+                class="card-img-top mx-auto mt-3 mt-lg-4"
                 alt="Lower Fees"
                 style="width: 62px; height: 62px"
               />
-              <div class="card-body">
-                <h2 class="card-title text-center">Lower Fees</h2>
-                <p class="card-text text-center">
-                  Removing unnecesary middlemen helps keep more money in your business
-                </p>
-              </div>
+              <h3 class="card-title text-center my-1 my-lg-3">Lower Fees</h3>
+              <p class="card-text text-center mx-3 mb-2 mb-lg-5">
+                Removing unnecesary middlemen helps keep more money in your business
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="width: 350px; height: 314px">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card py-5 mt-3 mt-lg-4 mb-1 mb-lg-3">
               <img
                 src="/images/brandEngagement.svg"
-                class="card-img-top mx-auto"
+                class="card-img-top mx-auto mt-3 mt-lg-4"
                 alt="Engagemant"
                 style="width: 62px; height: 62px"
               />
-              <div class="card-body">
-                <h2 class="card-title text-center">Brand Engagement</h2>
-                <p class="card-text text-center">
-                  Increase your customer engagement by rewardind your most loyal patrons
-                </p>
-              </div>
+              <h3 class="card-title text-center my-1 my-lg-3">Brand Engagement</h3>
+              <p class="card-text text-center mx-3 mb-2 mb-lg-5">
+                Increase your customer engagement by rewardind your most loyal patrons
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="width: 350px; height: 314px">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card py-5 mt-3 mt-lg-4 mb-1 mb-lg-3">
               <img
                 src="/images/liquidity.svg"
-                class="card-img-top mx-auto"
+                class="card-img-top mx-auto mt-3 mt-lg-4"
                 alt="Liquidity"
                 style="width: 62px; height: 62px"
               />
-              <div class="card-body">
-                <h2 class="card-title text-center">24/7 Liquidity</h2>
-                <p class="card-text text-center">
-                  Sacondary trading is hard, we make it easy though the Equiteez Marketplace
-                </p>
-              </div>
+              <h3 class="card-title text-center my-1 my-lg-3">24/7 Liquidity</h3>
+              <p class="card-text text-center mx-3 mb-2 mb-lg-5">
+                Sacondary trading is hard, we make it easy though the Equiteez Marketplace
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid" style="background-color: white">
-        <h2 id="chapter4">Blog</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <img src="/images/blog1.svg" class="card-img-top" alt="Blog1" />
-                <h6 class="card-subtitle mb-2 text-muted">02.06.20</h6>
-                <p class="card-text">
-                  In expression an solicitude principles in do. Small for ask shade water manor
-                  think men begin. At principle perfectly by sweetness do.
-                </p>
-              </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <h2 class="text-start text-lg-center" id="chapter4">Blog</h2>
+        <div class="row mt-4">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="card border-0">
+              <img src="/images/blog1.svg" class="card-img-top" alt="Blog1" />
+              <h6 class="card-subtitle mt-2 mb-1">02.06.20</h6>
+              <p class="card-text">
+                In expression an solicitude principles in do. Small for ask shade water manor think
+                men begin. At principle perfectly by sweetness do.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <img src="/images/blog2.svg" class="card-img-top" alt="Blog1" />
-                <h6 class="card-subtitle mb-2 text-muted">02.06.20</h6>
-                <p class="card-text">
-                  In expression an solicitude principles in do. Small for ask shade water manor
-                  think men begin. At principle perfectly by sweetness do.
-                </p>
-              </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="card border-0">
+              <img src="/images/blog2.svg" class="card-img-top" alt="Blog1" />
+              <h6 class="card-subtitle mt-2 mb-1">02.06.20</h6>
+              <p class="card-text">
+                In expression an solicitude principles in do. Small for ask shade water manor think
+                men begin. At principle perfectly by sweetness do.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <img src="/images/blog3.svg" class="card-img-top" alt="Blog1" />
-                <h6 class="card-subtitle mb-2 text-muted">02.06.20</h6>
-                <p class="card-text">
-                  In expression an solicitude principles in do. Small for ask shade water manor
-                  think men begin. At principle perfectly by sweetness do.
-                </p>
-              </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="card border-0">
+              <img src="/images/blog3.svg" class="card-img-top" alt="Blog1" />
+              <h6 class="card-subtitle mt-2 mb-1">02.06.20</h6>
+              <p class="card-text">
+                In expression an solicitude principles in do. Small for ask shade water manor think
+                men begin. At principle perfectly by sweetness do.
+              </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <button type="button" class="btn btn-outline-success">View all news</button>
+        <div class="row d-flex justify-content-center">
+          <button type="button" class="btn-green col-12 col-lg-3 my-4">View all news</button>
         </div>
       </div>
-      <div class="container-fluid" style="background-color: #c4c4c4">
+    </section>
+
+    <section class="contact-form pt-lg-4">
+      <div class="container pt-lg-5">
         <div class="row">
-          <div class="col-md-6">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h2 id="chapter5" class="card-title">Contact Us</h2>
-                <p class="card-text">
-                  For inquiries regarding events, projects, collaborations, or general information.
-                  info@equiteez.com
-                </p>
-                <p class="card-text">info@equiteez.com</p>
-              </div>
+          <div class="col-12 offset-0 col-lg-4 offset-lg-1">
+            <div class="info-text">
+              <h2 id="chapter5" class="card-title">Contact Us</h2>
+              <p class="card-text">
+                For inquiries regarding events, projects, collaborations, or general information.
+                <br />
+                <span>info@equiteez.com</span>
+              </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <form class="row g-3 needs-validation" novalidate>
-              <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <label for="validationCustom01" class="form-label">Name</label>
+          <div class="col-lg-6">
+            <form>
+              <div class="row align-items-center justify-content-between pb-lg-4">
+                <div class="col-2">
+                  <label>Name</label>
                 </div>
-                <div class="col-auto">
-                  <input type="text" class="form-control" id="validationCustom01" required />
-                  <div class="valid-feedback">Looks good!</div>
-                </div>
-              </div>
-              <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <label for="validationCustom01" class="form-label">Company</label>
-                </div>
-                <div class="col-auto">
-                  <input type="text" class="form-control" id="validationCustom01" required />
-                  <div class="valid-feedback">Looks good!</div>
+                <div class="col-9">
+                  <input />
                 </div>
               </div>
-              <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <label for="validationCustom01" class="form-label">E-mail*</label>
+              <div class="row align-items-center justify-content-between pb-lg-4">
+                <div class="col-2">
+                  <label>Company</label>
                 </div>
-                <div class="col-auto">
-                  <input type="text" class="form-control" id="validationCustom01" required />
-                  <div class="valid-feedback">Looks good!</div>
-                </div>
-              </div>
-              <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <label for="validationCustom01" class="form-label">E-mail*</label>
-                </div>
-                <div class="col-auto">
-                  <textarea
-                    type="text"
-                    class="form-control"
-                    id="validationCustom01"
-                    required
-                  ></textarea>
-                  <div class="valid-feedback">Looks good!</div>
+                <div class="col-9">
+                  <input />
                 </div>
               </div>
-              <button type="submit" class="btn btn-dark">Send</button>
+              <div class="row align-items-center justify-content-between pb-lg-4">
+                <div class="col-2">
+                  <label>E-mail*</label>
+                </div>
+                <div class="col-9">
+                  <input />
+                </div>
+              </div>
+              <div class="row align-items-center justify-content-between pb-lg-4">
+                <div class="col-2">
+                  <label>Message*</label>
+                </div>
+                <div class="col-9">
+                  <textarea class="w-100"></textarea>
+                </div>
+              </div>
+
+              <div class="pb-lg-5 d-flex justify-content-end">
+                <button class="col-6 col-lg-3" type="submit">Send</button>
+              </div>
             </form>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer mt-auto py-3 bg-dark">
+    </section>
+
+    <footer class="footer bg-dark pt-4 pb-5 pb-lg-1">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <img src="/images/logo.svg" alt="Logo" />
-            <a class="nav-link" href="#">Contact Us</a>
-            <ul d-f>
-              <a>
-                <img src="/images/twitter.svg" alt="Follow us on twitter" />
-              </a>
-              <a>
-                <img src="/images/facebook.svg" alt="Follow us on Facebook" />
-              </a>
-              <a>
-                <img src="/images/linkedin.svg" alt="Follow us on LinkedIn" />
-              </a>
-              <a>
-                <img src="/images/medium.svg" alt="Follow us on Medium" />
-              </a>
-            </ul>
+          <div class="col-12 col-lg-4 order-2 order-lg-1">
+            <img
+              class="logo d-none d-lg-block text-center text-lg-start pt-lg-2 pb-lg-1"
+              src="/images/logo.svg"
+              alt="Logo"
+            />
+            <div class="links">
+              <a class="nav-link pt-3 pb-lg-5" href="#chapter5">Contact Us</a>
+              <div class="media py-3 pt-lg-2">
+                <img src="/images/twitter.svg" alt="Follow us on twitter" class="twitter" />
+                <img src="/images/facebook.svg" alt="Follow us on Facebook" class="facebook" />
+                <img src="/images/linkedin.svg" alt="Follow us on LinkedIn" class="linkedin" />
+                <img src="/images/medium-dark.svg" alt="Follow us on Medium" class="medium" />
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <a class="nav-link" href="#" style="color: white; text-decoration: none"
-              >What Are Digital Securities?</a
-            >
-            <a class="nav-link" href="#">Products</a>
-            <a class="nav-link" href="#">Digitize Your Business</a>
-            <a class="nav-link" href="#">Blog</a>
+          <div class="col-12 col-lg-3 order-1 order-lg-2 text-center text-lg-start pt-lg-4">
+            <img class="logo d-block d-lg-none mx-auto pb-4" src="/images/logo.svg" alt="Logo" />
+            <a class="nav-link pb-4" href="#chapter1">What Are Digital Securities?</a>
+            <a class="nav-link pb-4" href="#chapter2">Products</a>
+            <a class="nav-link pb-4" href="#chapter3">Digitize Your Business</a>
+            <a class="nav-link pb-3 pb-lg-5" href="#chapter4">Blog</a>
           </div>
         </div>
-        <hr style="border: 1px solid #4a4a4a" />
         <div class="row">
-          <p style="color: #ffffff">©2020 Equiteez.All rights reserved.</p>
+          <div class="col-12 pt-lg-2 pb-5 pb-lg-3">
+            <hr class="line" />
+            <i class="licence">©2020 Equiteez.All rights reserved.</i>
+          </div>
         </div>
       </div>
     </footer>
