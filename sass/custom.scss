@@ -5,7 +5,12 @@ body {
   font-family: "Open Sans";
   font-style: normal;
   overflow-x: hidden;
+  .container,
+  .container-lg {
+    max-width: 1140px;
+  }
 }
+
 .modal-content {
   form {
     label {
@@ -29,6 +34,9 @@ body {
       background-color: transparent;
     }
     .btn-black {
+      width: 163px;
+      height: 43px;
+
       background: #252525;
       border-radius: 10px;
 
@@ -37,14 +45,15 @@ body {
       line-height: 27px;
       color: #ffffff;
 
-      &:focus {
+      &:hover {
         background: inherit;
-        outline: 5px solid #252525;
+        border: 3px solid #000000;
         color: #252525;
       }
     }
   }
 }
+
 .modal-content {
   background: #ffffff;
   border-radius: 10px;
@@ -60,13 +69,14 @@ body {
 
 .header {
   width: 100%;
-  position: fixed;
-  top: 0;
   left: 0;
   z-index: 2;
 
   background: #ffffff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  .logo {
+    padding: 27px 0;
+  }
 
   .nav-link {
     font-weight: 600;
@@ -76,7 +86,6 @@ body {
   }
 
   ul {
-    max-width: 976px;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -101,21 +110,24 @@ body {
 }
 
 .preview {
+  height: 769px;
   background-color: #2ecc71;
   h1 {
+    width: 700px;
+    margin: 0 0 28px;
+
     font-weight: 700;
     font-size: 52px;
     line-height: 71px;
     color: #ffffff;
-    margin-bottom: 28px;
   }
   p {
+    margin: 0 0 47px;
+
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
     color: #ffffff;
-
-    margin-bottom: 47px;
   }
   .btn {
     width: 255px;
@@ -128,23 +140,30 @@ body {
     font-size: 20px;
     line-height: 27px;
     color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 
-    &:focus {
+    &:hover {
       background: inherit;
-      outline: 5px solid #252525;
+      border: 5px solid #252525;
       color: #252525;
     }
+  }
+
+  .preview-img {
+    margin: 19px -11px 0;
   }
 }
 
 .securityBlock {
+  height: 845px;
   .row {
     .title-header {
       font-weight: 600;
       font-size: 45px;
       line-height: 61px;
       color: #000000;
-      padding: 30px 0;
+      margin: 0;
+      margin-top: 28px;
     }
     .title-subheader {
       font-weight: 400;
@@ -152,16 +171,29 @@ body {
       line-height: 34px;
       color: #000000;
 
-      margin-bottom: 55px;
+      margin: 30px 0 55px;
     }
 
     .email-input {
+      margin-top: 33px;
+
       height: 47px;
       border: 1px solid #969696;
       border-radius: 10px;
+
+      &::placeholder {
+        padding-left: 13px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+
+        color: #969696;
+      }
     }
 
     .btn {
+      margin-top: 33px;
+
       height: 47px;
       background: #2dc66e;
       border-radius: 10px;
@@ -171,9 +203,9 @@ body {
       line-height: 27px;
       color: #ffffff;
 
-      &:focus {
+      &:hover {
         background: inherit;
-        outline: 5px solid #2dc66e;
+        border: 5px solid #2dc66e;
         color: #2ecc71;
       }
     }
@@ -182,39 +214,47 @@ body {
     img {
       height: 330px;
     }
-    h5 {
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 41px;
-      color: #000000;
-      margin-bottom: 17px;
-    }
-    p {
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 30px;
-      color: #000000;
-      margin: 0;
+    .card-body {
+      padding: 15px 0 0;
+      h3 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        color: #000000;
+        margin: 19px 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: #000000;
+        margin: 0;
+      }
     }
   }
 }
 
 .quoteBlock {
+  height: 181px;
   background-color: #252525;
-  padding: 50px 0;
-  p {
+  h2 {
+    padding-top: 50px;
+    margin: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    font-weight: 600;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 43.58px;
     color: #2fcc71;
   }
-  figcaption {
-    font-size: 32px;
-    line-height: 44px;
+  p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38.13px;
     color: #2fcc71;
   }
 }
@@ -222,6 +262,7 @@ body {
 .productBlock {
   background-color: white;
   h2 {
+    padding-top: 59px;
     font-weight: 600;
     font-size: 45px;
     line-height: 61px;
@@ -229,7 +270,7 @@ body {
     color: #000000;
   }
   .card {
-    width: 280px;
+    width: 320px;
     border: none;
     text-align: center;
     .card-title {
@@ -249,32 +290,54 @@ body {
       color: #000000;
     }
   }
+  .launchpad {
+    .card-title {
+      margin-top: 15px;
+    }
+  }
+  .marketplace {
+    margin-top: 45px;
+  }
 }
 
 .benefits {
-  background-color: #f7f7f7;
+  height: 943.5px;
+  background-color: #c4c4c4;
   clip-path: polygon(0 0, 100% 68.5px, 100% calc(100% - 68.5px), 0% 100%);
   h2 {
     font-weight: 600;
-    font-size: 35px;
-    line-height: 36px;
+    font-size: 45px;
+    line-height: 61px;
     color: #000000;
+
+    margin-top: 50px;
+    margin-left: 2px;
   }
   .card {
-    height: 314px;
+    padding: 0;
+
+    height: 318px;
     background: #ffffff;
     border: 1px solid #2ecc71;
     box-sizing: border-box;
     border-radius: 10px;
     img {
+      margin-top: 52px;
       width: 62px;
       height: 62px;
     }
     h3 {
+      margin-top: 22px;
+
       font-weight: 700;
       font-size: 25px;
       line-height: 34px;
-      color: #000000;
+    }
+    p {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
     }
   }
 }
@@ -282,12 +345,13 @@ body {
 .blog {
   background-color: white;
   h2 {
+    margin-top: 20px;
     font-weight: 600;
     font-size: 45px;
     line-height: 61px;
     color: #000000;
   }
-  h6 {
+  h3 {
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
@@ -301,6 +365,10 @@ body {
     color: #000000;
   }
   .btn-green {
+    width: 255px;
+    height: 56px;
+    margin: 38px 0;
+
     background: inherit;
     border: 5px solid #2dc66e;
     border-radius: 10px;
@@ -310,7 +378,7 @@ body {
     line-height: 34px;
     color: #2ecc71;
 
-    &:focus {
+    &:hover {
       background: #2dc66e;
       color: #ffffff;
     }
@@ -318,8 +386,10 @@ body {
 }
 
 .contact-form {
-  background-color: #f7f7f7;
+  background-color: #c4c4c4;
   .info-text {
+    padding-top: 5px;
+    padding-left: 10px;
     h2 {
       font-weight: 600;
       font-size: 45px;
@@ -330,13 +400,12 @@ body {
       font-weight: 400;
       font-size: 20px;
       line-height: 27px;
-
       color: #000000;
+
       a {
-        color: inherit;
-        text-decoration: none;
-        color: #2dc66e;
         font-weight: 700;
+        color: #2dc66e;
+        text-decoration: none;
       }
     }
   }
@@ -349,6 +418,7 @@ body {
       color: #000000;
     }
     input {
+      min-width: 381px;
       width: 100%;
       height: 36px;
       border: 1px solid #969696;
@@ -362,7 +432,17 @@ body {
       resize: none;
       background-color: transparent;
     }
+
+    .name-input,
+    .company-input,
+    .email-input,
+    .message-input {
+      padding-bottom: 20px;
+    }
+
     .btn {
+      min-width: 160px;
+
       background: #252525;
       border-radius: 10px;
 
@@ -371,7 +451,8 @@ body {
       line-height: 27px;
       color: #ffffff;
 
-      &:focus {
+      &:hover {
+        box-shadow: none;
         background: inherit;
         outline: 5px solid #252525;
         color: #252525;
@@ -381,28 +462,585 @@ body {
 }
 
 .footer {
+  .logo {
+    width: 165px;
+    margin-top: 12px;
+  }
   .nav-link {
     padding: 0;
+    margin-left: 3px;
+    margin-bottom: 26px;
 
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     color: #ffffff;
   }
+  .company-contacts {
+    padding-top: 6px;
+    .nav-link {
+      margin-top: 19px;
+    }
+  }
+  .page-links {
+    margin-top: 35px;
+  }
+
   .media {
+    margin-top: 58px;
+    margin-left: 3px;
+
     width: 180px;
     padding: 0;
 
     display: flex;
     justify-content: space-between;
   }
-  hr {
-    border: 1px solid #4a4a4a;
+  .licence {
+    margin-bottom: 15px;
+    hr {
+      margin: 47px 0 20px 0;
+      border: 1px solid #4a4a4a;
+    }
+    i {
+      margin-left: 4px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
   }
-  i {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #ffffff;
+}
+
+@media (min-width: 320px) {
+  .preview {
+    height: 704px;
+    h1 {
+      width: auto;
+      margin: 0;
+
+      font-size: 35px;
+      line-height: 40px;
+    }
+    p {
+      padding: 0 20px;
+      margin: 21px 0 27px;
+
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 25px;
+    }
+
+    .preview-img {
+      margin: 0;
+      margin-top: 15px;
+
+      height: 400px;
+    }
+  }
+  .securityBlock {
+    height: 1556px;
+    .row {
+      .title-header {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 32px;
+        margin: 0;
+      }
+      .title-subheader {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+
+        margin: 15px 0 25px;
+      }
+      .email-input {
+        margin-top: 7px;
+      }
+
+      .btn {
+        margin-top: -5px;
+      }
+    }
+    .row {
+      img {
+        height: 252px;
+      }
+      .card-body {
+        padding: 11px 0 0;
+        h3 {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 30px;
+          margin: 10px 0;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          margin-top: 15px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  .quoteBlock {
+    height: 142px;
+    h2 {
+      padding-top: 29px;
+
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24.51px;
+    }
+  }
+  .productBlock {
+    h2 {
+      padding-top: 40px;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 48px;
+    }
+    .card {
+      width: 320px;
+      border: none;
+      text-align: center;
+      .card-title {
+        margin-bottom: 24px;
+
+        font-size: 25px;
+        line-height: 34px;
+      }
+      .card-text {
+        margin-bottom: 5px;
+
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+    .launchpad {
+      .card-title {
+        margin-top: 13px;
+        margin-right: 1px;
+      }
+    }
+    .marketplace {
+      margin-top: 29px;
+    }
+    img {
+      margin-top: 8px;
+    }
+  }
+  .benefits {
+    height: 1658px;
+    background-color: #c4c4c4;
+    clip-path: polygon(0 0, 100% 15px, 100% calc(100% - 15px), 0% 100%);
+    h2 {
+      position: relative;
+      bottom: 16px;
+      margin: 0;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 36px;
+      margin-bottom: 40px;
+    }
+    .card {
+      padding: 0;
+      margin-bottom: 15px;
+
+      height: 228px;
+      background: #ffffff;
+      border: 1px solid #2ecc71;
+      box-sizing: border-box;
+      border-radius: 10px;
+      img {
+        margin-top: 26px;
+      }
+      h3 {
+        margin-top: 2px;
+
+        font-size: 22px;
+        line-height: 30px;
+      }
+      p {
+        margin-top: 0px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+  .blog {
+    h2 {
+      margin: 0;
+      margin-top: 40px;
+      margin-bottom: -8px;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 48px;
+    }
+    .blog-post {
+      h3 {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 38px;
+      }
+    }
+
+    .btn-green {
+      width: 100%;
+      height: 56px;
+      margin: 0;
+      margin-bottom: 45px;
+    }
+  }
+  .contact-form {
+    .contacts {
+      margin-bottom: 35px;
+      .info-text {
+        padding: 0;
+        h2 {
+          font-size: 35px;
+          line-height: 48px;
+
+          margin: 14px 0 3px 4px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    form {
+      .name-input,
+      .company-input,
+      .email-input,
+      .message-input {
+        padding-bottom: 2px;
+      }
+      .btn-wrapper {
+        margin-top: 5px;
+        margin-bottom: 82px;
+        .btn {
+          width: 160px;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 537px;
+    .logo {
+      margin-top: 0px;
+      margin-bottom: 24px;
+    }
+    .nav-link {
+      padding: 0;
+      margin-left: 3px;
+      margin-bottom: 26px;
+    }
+    .company-contacts {
+      padding-top: 6px;
+      .nav-link {
+        margin-top: 0px;
+      }
+    }
+    .page-links {
+      margin-top: 35px;
+    }
+
+    .media {
+      margin-top: -8px;
+      margin-left: 3px;
+    }
+    .licence {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      hr {
+        margin-top: 17px;
+        margin-bottom: 11px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .preview {
+    height: 769px;
+    h1 {
+      width: 700px;
+      margin: 0 0 28px;
+
+      font-size: 52px;
+      line-height: 71px;
+    }
+    p {
+      padding: 0;
+      margin: 0 0 47px;
+
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    .preview-img {
+      margin: 19px -11px 0;
+
+      height: auto;
+    }
+  }
+  .securityBlock {
+    height: 845px;
+    .row {
+      .title-header {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 61px;
+        margin-top: 28px;
+      }
+      .title-subheader {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 34px;
+
+        margin: 30px 0 55px;
+      }
+
+      .email-input {
+        margin-top: 33px;
+      }
+
+      .btn {
+        margin-top: 33px;
+      }
+    }
+    .row {
+      img {
+        height: 330px;
+      }
+      .card-body {
+        h3 {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 41px;
+          margin: 24px 0 17px 0;
+        }
+        p {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 30px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .quoteBlock {
+    height: 181px;
+    h2 {
+      padding-top: 50px;
+
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 43.58px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38.13px;
+    }
+  }
+  .productBlock {
+    h2 {
+      padding-top: 59px;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 61px;
+    }
+    .card {
+      width: 320px;
+      border: none;
+      text-align: center;
+      .card-title {
+        margin-bottom: 25px;
+
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+      }
+      .card-text {
+        margin-bottom: 91px;
+
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    .launchpad {
+      .card-title {
+        margin-top: 15px;
+      }
+    }
+    .marketplace {
+      margin-top: 45px;
+    }
+    img {
+      margin-top: 0px;
+    }
+  }
+  .benefits {
+    height: 943.5px;
+    clip-path: polygon(0 0, 100% 68.5px, 100% calc(100% - 68.5px), 0% 100%);
+    h2 {
+      position: relative;
+      bottom: 0px;
+
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 61px;
+
+      margin-top: 54px;
+      margin-left: 2px;
+      margin-bottom: 8px;
+    }
+    .card {
+      padding: 0;
+      margin-bottom: 25px;
+
+      height: 318px;
+      img {
+        margin-top: 52px;
+      }
+      h3 {
+        margin-top: 22px;
+
+        font-size: 25px;
+        line-height: 34px;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+  .blog {
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 61px;
+    }
+    .blog-post {
+      h3 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+    .btn-green {
+      width: 255px;
+      height: 56px;
+      margin: 0 0 40px 0;
+    }
+  }
+  .contact-form {
+    .contacts {
+      margin-bottom: 35px;
+      .info-text {
+        padding: 0;
+        margin-left: 7px;
+        h2 {
+          margin: 0;
+
+          font-weight: 600;
+          font-size: 45px;
+          line-height: 61px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+    }
+
+    form {
+      .name-input,
+      .company-input,
+      .email-input,
+      .message-input {
+        padding-bottom: 20px;
+      }
+      .btn-wrapper {
+        margin-top: 5px;
+        margin-bottom: 38px;
+        .btn {
+          width: 160px;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 374px;
+    .logo {
+      margin-top: 0px;
+      margin-top: 39px;
+      margin-bottom: 21px;
+    }
+    .nav-link {
+      padding: 0;
+      margin-left: 3px;
+      margin-bottom: 26px;
+
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: #ffffff;
+    }
+    .company-contacts {
+      padding-top: 6px;
+      .nav-link {
+        margin-top: 0px;
+      }
+    }
+    .page-links {
+      margin-top: 61px;
+    }
+
+    .media {
+      margin-top: 58px;
+      margin-left: 3px;
+    }
+    .licence {
+      margin-bottom: 15px;
+      display: block;
+      hr {
+        margin: 47px 0 20px 0;
+        margin-bottom: 11px;
+      }
+    }
   }
 }
