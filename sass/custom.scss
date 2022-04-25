@@ -197,6 +197,7 @@ body {
       height: 47px;
       background: #2dc66e;
       border-radius: 10px;
+      box-shadow: none;
 
       font-weight: 600;
       font-size: 20px;
@@ -454,8 +455,8 @@ body {
       &:hover {
         box-shadow: none;
         background: inherit;
-        outline: 5px solid #252525;
-        color: #252525;
+        border: 3px solid #000000;
+        color: #000000;
       }
     }
   }
