@@ -443,6 +443,7 @@ body {
 
     .btn {
       min-width: 160px;
+      height: 41px;
 
       background: #252525;
       border-radius: 10px;
@@ -452,8 +453,10 @@ body {
       line-height: 27px;
       color: #ffffff;
 
-      &:hover {
+      &:focus {
         box-shadow: none;
+      }
+      &:hover {
         background: inherit;
         border: 3px solid #000000;
         color: #000000;
