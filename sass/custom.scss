@@ -78,7 +78,19 @@ body {
     padding: 27px 0;
   }
 
+  .desktop-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .desktop-links{
+    padding-left: 20px;
+    padding-right: 34px;
+  }
+
   .nav-link {
+    padding: 0.5rem 0;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
@@ -150,7 +162,7 @@ body {
   }
 
   .preview-img {
-    margin: 19px -11px 0;
+    margin: 19px -35px 0;
   }
 }
 
@@ -804,8 +816,7 @@ body {
     }
 
     .preview-img {
-      margin: 19px -11px 0;
-
+      margin: 19px -35px 0;
       height: auto;
     }
   }
