@@ -1,5 +1,5 @@
 @import url(/fonts/stylesheet.css);
-@import url(../node_modules/bootstrap/scss/bootstrap.scss);
+@import url(/assets/css/bootstrap.css);
 
 body {
   font-family: "Open Sans";
@@ -85,8 +85,8 @@ body {
     width: 100%;
   }
   .desktop-links{
-    padding-left: 20px;
-    padding-right: 34px;
+    margin-left: 20px;
+    margin-right: 34px;
   }
 
   .nav-link {
